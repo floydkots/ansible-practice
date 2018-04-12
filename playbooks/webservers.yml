@@ -1,7 +1,12 @@
+- include: appserver.yml
+- include: dbservers.yml
+
 - name: Configure webserver with nginx
   hosts: webservers
   become: True
   tasks:
+    - include: apt-update.yml
+
     - name: install nginx
       apt: name=nginx update_cache=yes
 
@@ -22,5 +27,4 @@
       notify: restart nginx
 
   handlers:
-    - name: restart nginx
-      service: name=nginx state=restarted
+    - include: restart-nginx.yml
