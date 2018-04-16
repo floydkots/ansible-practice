@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant_data":{"guestpath":"/vagrant_data","hostpath":"/home/floyd/Projects/udemy/ansible/ansible-practice/database/provisioning","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/floyd/Projects/udemy/ansible/ansible-practice/database","disabled":false,"__vagrantfile":true}}}

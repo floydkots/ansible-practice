@@ -1,0 +1,5 @@
+---
+- hosts: mysqlserver
+  become: true
+  roles:
+    - bennojoy.mysql
